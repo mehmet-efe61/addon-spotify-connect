@@ -4,5 +4,5 @@ build_from:
   amd64: ghcr.io/hassio-addons/base:17.2.3
   armv7: ghcr.io/hassio-addons/base:17.2.3
 codenotary:
-  base_image: codenotary@frenck.dev
-  signer: codenotary@frenck.dev
+  base_image: hi@mehmetefe.tech
+  signer: hi@mehmetefe.tech
