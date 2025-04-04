@@ -1,5 +1,5 @@
 {
-    "name": "Home Assistant Add-on: Spotify COnnect",
+    "name": "Home Assistant Add-on: Spotify Connect (with normalisation)",
     "url": "https://github.com/mehmet-efe61/addon-spotify-connect/",
     "maintainer": "Efe <hi@mehmetefe.tech>"
   }
