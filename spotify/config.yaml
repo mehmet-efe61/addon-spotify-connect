@@ -2,9 +2,8 @@
 name: Spotify Connect
 version: dev
 slug: spotify
-description: Play Spotify music on your Home Assistant device
+description: Play Spotify music on your Home Assistant device (with normalization)
 url: https://github.com/mehmet-efe61/addon-spotify-connect
-codenotary: hi@mehmetefe.tech
 arch:
   - aarch64
   - amd64
