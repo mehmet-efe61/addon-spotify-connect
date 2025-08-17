@@ -16,11 +16,11 @@ RUN \
         pulseaudio-dev \
         cmake \
         clang19-libclang \
+        pkgconfig \
     \
     && apk add --no-cache \
         pulseaudio \
     \
-    && cargo install --force --locked bindgen-cli \
     && export PATH="$HOME/.cargo/bin:$PATH" \
     && cargo install \
         --git https://github.com/librespot-org/librespot \
@@ -32,7 +32,6 @@ RUN \
         --bin librespot \
         --verbose \
     \
-    && cargo uninstall bindgen-cli \
     && apk del --no-cache --purge .build-dependencies \
     && rm -fr \
         /tmp/* \
