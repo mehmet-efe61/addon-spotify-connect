@@ -42,7 +42,7 @@ if bashio::config.true 'autoplay'; then
 fi
 
 # enable_volume_normalisation
-if bashio::config.true 'volume_normalisation'; then
+if bashio::config.true 'enable_volume_normalisation'; then
   options+=(--enable-volume-normalisation)
 fi
 

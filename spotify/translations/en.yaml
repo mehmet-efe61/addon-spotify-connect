@@ -31,3 +31,7 @@ configuration:
     name: Autoplay
     description: >-
       Whether Spotify should autoplay similar songs at the end of the queue.
+  enable_volume_normalisation:
+    name: Enable Volume Normalisation
+    description: >-
+      Enables ReplayGain volume normalisation to play all tracks at approximately the same perceived volume level.

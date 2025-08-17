@@ -27,3 +27,11 @@ configuration:
     name: Spotify password
     description: >-
       La password per accedere al tuo account Spotify Premium.
+  autoplay:
+    name: Autoplay
+    description: >-
+      Se Spotify dovrebbe riprodurre automaticamente brani simili alla fine della coda.
+  enable_volume_normalisation:
+    name: Abilita Normalizzazione Volume
+    description: >-
+      Abilita la normalizzazione del volume ReplayGain per riprodurre tutti i brani approssimativamente allo stesso livello di volume percepito.

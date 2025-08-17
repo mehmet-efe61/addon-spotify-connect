@@ -39,6 +39,7 @@ initial_volume: 50
 username: frenck@example.com
 password: MySpotifyPassword
 autoplay: true
+enable_volume_normalisation: true
 ```
 
 **Note**: _This is just an example, don't copy and paste it! Create your own!_
@@ -100,6 +101,17 @@ The password you use to login to your Spotify Premium account.
 ### Option: `autoplay`
 
 Whether Spotify should autoplay similar songs when reaching the end of the queue.
+
+### Option: `enable_volume_normalisation`
+
+Enables volume normalisation to play all tracks at approximately the same perceived volume level, matching Spotify's "Normal" loudness setting. This helps ensure consistent loudness across different tracks and albums.
+
+When enabled, librespot will automatically:
+- Apply ReplayGain metadata embedded in Spotify tracks
+- Use dynamic limiting (similar to Spotify's native behavior) to prevent clipping
+- Maintain consistent volume levels without user intervention
+
+Default: `true`
 
 ## Known issues and limitations
 

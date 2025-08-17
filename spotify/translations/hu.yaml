@@ -28,3 +28,11 @@ configuration:
     name: Spotify jelszó
     description: >-
       Spotify Premium előfizetéssel rendelkező fiók jelszava.
+  autoplay:
+    name: Automatikus lejátszás
+    description: >-
+      A Spotify automatikusan lejátsszon-e hasonló dalokat a lejátszási sor végén.
+  enable_volume_normalisation:
+    name: Hangerő normalizálás engedélyezése
+    description: >-
+      Engedélyezi a ReplayGain hangerő normalizálást, hogy minden szám körülbelül ugyanazon az érzékelt hangerőszinten szóljon.
