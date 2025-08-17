@@ -1,6 +1,6 @@
 ---
 name: Spotify Connect
-version: 0.6.0-dev
+version: 0.6.1-dev
 slug: spotify-normalized
 description: Play Spotify music on your Home Assistant device (with normalisation)
 url: https://github.com/mehmet-efe61/addon-spotify-connect

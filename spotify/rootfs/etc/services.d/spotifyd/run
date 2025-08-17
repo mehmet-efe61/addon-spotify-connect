@@ -28,6 +28,10 @@ options+=(--name "${name}")
 # Force connection to use port 443 for better network compatibility
 options+=(--ap-port 443)
 
+# Use specific backend for better compatibility
+options+=(--backend pulseaudio)
+options+=(--device default)
+
 # Username / password
 if bashio::config.has_value 'username'; then
     bashio::config.require.password
@@ -56,6 +60,9 @@ options+=(--disable-audio-cache)
 if bashio::debug; then
   options+=(--verbose)
 fi
+
+# Set PulseAudio socket path
+export PULSE_SERVER=unix:/run/s6/services/pulseaudio/pulse-socket
 
 # Run librespot
 exec librespot "${options[@]}"

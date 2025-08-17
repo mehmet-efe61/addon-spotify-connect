@@ -20,6 +20,7 @@ RUN \
     \
     && apk add --no-cache \
         pulseaudio \
+        ca-certificates \
     \
     && export PATH="$HOME/.cargo/bin:$PATH" \
     && cargo install \
@@ -41,6 +42,9 @@ RUN \
 
 # Copy root filesystem
 COPY rootfs /
+
+# Set DNS servers for better connectivity
+ENV PULSE_SERVER=unix:/run/s6/services/pulseaudio/pulse-socket
 
 # Build arguments
 ARG BUILD_ARCH
