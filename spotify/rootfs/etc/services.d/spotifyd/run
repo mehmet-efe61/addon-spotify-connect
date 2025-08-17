@@ -25,6 +25,9 @@ options+=(--initial-volume "$initial_volume")
 name=$(bashio::config 'name')
 options+=(--name "${name}")
 
+# Force connection to use port 443 for better network compatibility
+options+=(--ap-port 443)
+
 # Username / password
 if bashio::config.has_value 'username'; then
     bashio::config.require.password
